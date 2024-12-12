@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #1c0082; /* Royal bluish-purple */
+  --accent-color: #ffd700; /* Golden */
+  --background-color: #ffffff; /* White */
+  --text-color: #000000; /* Black */
+  --transition-duration: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color var(--transition-duration);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}

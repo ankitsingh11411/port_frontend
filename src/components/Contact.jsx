@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Contact.module.css';
 
 function Contact() {
   return (
-    <section>
+    <section className={styles.section}>
       <h1>Contact Me</h1>
       <form>
         <label>

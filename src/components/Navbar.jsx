@@ -1,25 +1,26 @@
 import React from 'react';
-import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+import styles from './Navbar.module.css';
 
 function Navbar() {
+  ``;
   return (
-    <nav className="navbar">
-      <div className="logo">Welcome and a good day</div>
-      <ul className="nav-links">
+    <nav className={styles.navbar}>
+      <ul className={styles.navlinks}>
         <li>
-          <a href="/">Profile</a>
+          <NavLink exact to="/" activeClassName={styles.active}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="/projects">My Work</a>
+          <NavLink to="/resume" activeClassName={styles.active}>
+            Resume
+          </NavLink>
         </li>
         <li>
-          <a href="/skills">Skills</a>
-        </li>
-        <li>
-          <a href="/resume">Resume</a>
-        </li>
-        <li>
-          <a href="/contact">Contact Me</a>
+          <NavLink to="/contact" activeClassName={styles.active}>
+            Contact Me
+          </NavLink>
         </li>
       </ul>
     </nav>

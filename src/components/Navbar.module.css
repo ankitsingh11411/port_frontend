@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #001230;
+  box-shadow: 8px 8px 15px #a3a3a3, -8px -8px 15px #ffffff; /* Neumorphism effect */
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks a {
+  color: #00a4af;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navlinks a:hover {
+  color: #00ff95;
+}

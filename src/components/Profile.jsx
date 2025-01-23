@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Profile.module.css';
 import mypic from '/mypic.jpg';
 import projects from '../assets/Project.js';
@@ -27,25 +28,46 @@ function Profile() {
       <div className={styles['project-cards']}>
         {projects.length > 0 ? (
           projects.map((project, index) => (
-            <div key={index} className={styles['project-card']}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              {' | '}
-              <a
-                href={project.deployedLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
+            <motion.div
+              key={index}
+              className={styles['project-card']}
+              whileHover={{ rotateY: 180 }}
+              transition={{ duration: 1 }}
+            >
+              <div className={styles['project-card-inner']}>
+                <div className={styles['project-card-front']}>
+                  <h3>{project.title}</h3>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={styles['project-image']}
+                  />
+                  <ul className={styles['project-skills']}>
+                    {project.skills.map((skill, skillIndex) => (
+                      <li key={skillIndex}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className={styles['project-card-back']}>
+                  <p>{project.description}</p>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  {' | '}
+                  <a
+                    href={project.deployedLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           ))
         ) : (
           <p>No projects available.</p>

@@ -10,10 +10,8 @@ const { Meta } = Card;
 
 const backgroundVariants = {
   animate: {
-    opacity: [0.2, 0.8, 0.2],
-    scale: [0.8, 1.2, 0.8],
-    x: [0, 100, -100],
-    y: [0, -50, 50],
+    opacity: [0.1, 0.3, 0.3, 0.3, 0.1],
+    scale: [0.3, 0.7, 1.2, 0.7, 0.3],
     transition: {
       duration: 2,
       repeat: Infinity,
@@ -31,13 +29,10 @@ function Profile() {
         variants={backgroundVariants}
         animate="animate"
       />
-      <Avatar
-        src={mypic}
-        size={150}
-        style={{
-          border: '4px solid #00b7cf',
-        }}
-      />
+      <div className={styles.avatar_wrapper}>
+        <Avatar src={mypic} size={140} />
+      </div>
+
       <Paragraph className={styles.profile_description}>
         I am a full-stack developer with a penchant for engineering elegant and
         minimalistic frontend designs. My proficiency spans crafting seamless

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #001230;
+  background-color: #270000;
   box-shadow: 8px 8px 15px #a3a3a3, -8px -8px 15px #ffffff; /* Neumorphism effect */
 }
 
@@ -16,7 +16,7 @@
 }
 
 .navlinks a {
-  color: #00a4af;
+  color: #af6900;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;

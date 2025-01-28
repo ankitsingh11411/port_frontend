@@ -5,6 +5,7 @@ import Profile from './components/Profile';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import FloatIcons from './components/Floaticons';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="app-container">
         <Navbar />
         <FloatIcons />
+        <AnimatedBackground />
         <Routes>
           <Route path="/" element={<Profile />} />
           <Route path="/resume" element={<Resume />} />

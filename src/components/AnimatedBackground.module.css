@@ -1,0 +1,10 @@
+.animated_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #a30000 20%, transparent 70%);
+  filter: blur(50px);
+  z-index: -1;
+}

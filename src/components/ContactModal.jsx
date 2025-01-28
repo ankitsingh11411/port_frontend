@@ -13,7 +13,6 @@ function ContactModal({ isOpen, onClose }) {
 
   return (
     <Modal
-      title="Contact Me"
       open={isOpen}
       onCancel={onClose}
       footer={null}

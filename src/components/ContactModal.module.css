@@ -1,5 +1,40 @@
-.modal {
-  max-width: 500px !important;
+:global(.ant-modal-content) {
+  background: rgba(255, 255, 255, 0.164) !important;
+  backdrop-filter: blur(10px) !important;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+:global(.ant-modal-header) {
+  background: rgba(0, 25, 48, 0.4);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+:global(.ant-modal-close-x) {
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+:global(.ant-modal-close-x:hover) {
+  transform: scale(1.2);
+  color: #ff4d4d;
+}
+
+:global(.ant-input),
+:global(.ant-input-textarea) {
+  background: white !important;
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid #0073e6 !important;
+  border-radius: 5px;
+}
+
+:global(.ant-input::placeholder),
+:global(.ant-input-textarea::placeholder) {
+  color: #666;
 }
 
 .form {
@@ -9,12 +44,15 @@
 
 .submitBtn {
   width: 100%;
-  background-color: #1890ff;
+  background-color: #003e79;
+  color: white;
   border: none;
   height: 40px;
   font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .submitBtn:hover {
-  background-color: #40a9ff;
+  background-color: #00dd12 !important;
 }

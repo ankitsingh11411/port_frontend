@@ -43,3 +43,26 @@
 .social a:nth-child(3) i {
   color: rgb(21, 166, 202);
 }
+
+.contactIcon {
+  cursor: pointer;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+.contactIcon:hover {
+  transform: rotate(360deg);
+}
+
+.contactIcon i {
+  font-size: 1.5rem;
+  color: rgb(255, 165, 0);
+}

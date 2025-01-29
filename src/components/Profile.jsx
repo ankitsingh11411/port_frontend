@@ -49,7 +49,7 @@ function Profile() {
         {projects.length > 0 ? (
           <Row gutter={[32, 32]} justify="center">
             {projects.map((project, index) => (
-              <Col key={index} xs={24} sm={12} md={12} lg={12} xl={12}>
+              <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6}>
                 <ProjectCard project={project} onClick={showModal} />
               </Col>
             ))}

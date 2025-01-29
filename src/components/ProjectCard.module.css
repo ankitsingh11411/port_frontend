@@ -28,15 +28,3 @@
 .card_image_wrapper:hover .card_image {
   transform: scale(1.1);
 }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .card_image_wrapper {
-    height: 400px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .card_image_wrapper {
-    height: 450px;
-  }
-}

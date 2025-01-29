@@ -41,7 +41,7 @@ const projects = [
       'Built with React Vite, Ant Design, Framer Motion, and Modular CSS, my portfolio showcases a sleek, high-performance UI with smooth animations. On the backend, Express.js, MongoDB, and JWT ensure secure authentication and efficient data management, following the MERN stack approach. Nodemailer handles seamless communication. Explore my work and connect for collaborations! 🚀',
     githubLink: 'https://github.com/ankitsingh11411/port_frontend',
     deployedLink: 'https://port-frontend-one.vercel.app/',
-    image: '/portfolio.png',
+    image: '/portfoliodep.png',
     skills: ['React', 'Vite', 'Framer Motion', 'MongoDB', 'Express.js'],
   },
   {

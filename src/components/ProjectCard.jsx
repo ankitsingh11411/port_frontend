@@ -13,6 +13,7 @@ const ProjectCard = ({ project, onClick }) => {
         repeat: Infinity,
         repeatType: 'reverse',
       }}
+      className={styles.card_container}
     >
       <Card
         hoverable
@@ -23,13 +24,16 @@ const ProjectCard = ({ project, onClick }) => {
               alt={project.title}
               className={styles.card_image}
             />
-            <div className={styles.card_title_overlay}>{project.title}</div>
+            <div className={styles.card_title}>{project.title}</div>
           </div>
         }
+        bodyStyle={{ display: 'none' }}
         style={{
           height: '100%',
           borderRadius: '15px',
           overflow: 'hidden',
+          background: 'transparent',
+          boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
         }}
         onClick={() => onClick(project)}
       />

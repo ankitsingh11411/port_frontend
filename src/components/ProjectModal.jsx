@@ -5,7 +5,7 @@ import styles from './ProjectModal.module.css';
 const ProjectModal = ({ project, visible, onClose }) => {
   return (
     <Modal
-      title={project?.title}
+      title=""
       visible={visible}
       onCancel={onClose}
       footer={null}
@@ -25,6 +25,7 @@ const ProjectModal = ({ project, visible, onClose }) => {
             alt={project.title}
             className={styles.modal_image}
           />
+          <h2 className={styles.project_title}>{project.title}</h2>
           <div className={styles.project_skills}>
             {project.skills.map((skill, index) => (
               <Tag color="cyan" key={index}>

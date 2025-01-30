@@ -5,7 +5,6 @@ import mypic from '/mypic.jpg';
 import projects from '../assets/Project.js';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
-import AnimatedBackground from './AnimatedBackground';
 
 const { Paragraph } = Typography;
 
@@ -25,9 +24,9 @@ function Profile() {
 
   return (
     <section className={styles.profile}>
-      <AnimatedBackground />
       <div className={styles.avatar_wrapper}>
-        <Avatar src={mypic} size={100} />
+        <div className={styles.glow_ring}></div>
+        <Avatar src={mypic} size={120} className={styles.avatar} />
       </div>
       <Paragraph className={styles.profile_description}>
         I am a full-stack developer with a penchant for engineering elegant and
@@ -40,14 +39,11 @@ function Profile() {
         across every project phase. <br />
         Outside the digital sphere, I am an automotive aficionado with deep
         knowledge of cars, motorcycles, high-performance racing, advanced
-        modifications, and the intricate science of aerodynamics. This
-        harmonious blend of technical prowess and creative ingenuity drives my
-        ability to craft solutions that are both functional and visually
-        captivating.
+        modifications, and the intricate science of aerodynamics.
       </Paragraph>
       <div className={styles.project_cards}>
         {projects.length > 0 ? (
-          <Row gutter={[32, 32]} justify="center">
+          <Row gutter={[45, 45]} justify="center">
             {projects.map((project, index) => (
               <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6}>
                 <ProjectCard project={project} onClick={showModal} />

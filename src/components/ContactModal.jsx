@@ -1,14 +1,30 @@
 import React from 'react';
 import { Modal, Form, Input, Button } from 'antd';
 import styles from './ContactModal.module.css';
+import axios from 'axios';
 
 function ContactModal({ isOpen, onClose }) {
   const [form] = Form.useForm();
 
-  const handleSubmit = (values) => {
-    console.log('Form Submitted:', values);
-    form.resetFields();
-    onClose();
+  const handleSubmit = async (values) => {
+    try {
+      const response = await axios.post(
+        'https://port-backend-nine.vercel.app/api/contact',
+        values,
+        {
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
+
+      if (response.status === 201) {
+        message.success('Message sent successfully!');
+        form.resetFields();
+        onClose();
+      }
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      message.error('Failed to send message, try again later.');
+    }
   };
 
   return (

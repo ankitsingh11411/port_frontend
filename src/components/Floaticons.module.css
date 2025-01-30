@@ -22,6 +22,7 @@
   height: 3rem;
   border-radius: 50%;
   transition: transform 0.4s;
+  cursor: pointer;
 }
 
 .social a:hover {
@@ -32,37 +33,19 @@
   font-size: 1.5rem;
 }
 
-.social a:nth-child(1) i {
-  color: rgb(16, 16, 241);
-}
-
-.social a:nth-child(2) i {
-  color: rgb(6, 199, 6);
-}
-
-.social a:nth-child(3) i {
-  color: rgb(21, 166, 202);
-}
-
-.contactIcon {
-  cursor: pointer;
-  color: #000000;
-  background: rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  transition: transform 0.4s;
-}
-
-.contactIcon:hover {
-  transform: rotate(360deg);
-}
-
 .contactIcon i {
-  font-size: 1.5rem;
   color: rgb(255, 165, 0);
+}
+
+.themeIcon i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+[data-theme='light'] .themeIcon i {
+  color: rgb(255, 165, 0);
+}
+
+[data-theme='dark'] .themeIcon i {
+  color: rgb(173, 216, 230);
 }

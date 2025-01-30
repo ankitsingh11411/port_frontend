@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Profile from './components/Profile';
-import FloatIcons from './components/FloatIcons';
+import Profile from './components/Profile.jsx';
+import FloatIcons from './components/FloatIcons.jsx';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');

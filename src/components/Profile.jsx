@@ -27,7 +27,7 @@ function Profile() {
     <section className={styles.profile}>
       <AnimatedBackground />
       <div className={styles.avatar_wrapper}>
-        <Avatar src={mypic} size={140} />
+        <Avatar src={mypic} size={100} />
       </div>
       <Paragraph className={styles.profile_description}>
         I am a full-stack developer with a penchant for engineering elegant and

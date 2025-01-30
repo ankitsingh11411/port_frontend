@@ -6,13 +6,11 @@ import styles from './ProjectCard.module.css';
 const ProjectCard = ({ project, onClick }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
-      animate={{ scale: [1, 1.02, 1] }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        repeatType: 'reverse',
+      whileHover={{
+        scale: 1.03,
+        boxShadow: '0 10px 30px rgba(255, 255, 255, 0.1)',
       }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
       className={styles.card_container}
     >
       <Card
@@ -30,10 +28,13 @@ const ProjectCard = ({ project, onClick }) => {
         bodyStyle={{ display: 'none' }}
         style={{
           height: '100%',
-          borderRadius: '15px',
+          borderRadius: '12px',
           overflow: 'hidden',
-          background: 'transparent',
-          boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
+          background: 'rgba(255, 255, 255, 0.08)',
+          backdropFilter: 'blur(15px)',
+          WebkitBackdropFilter: 'blur(15px)',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+          boxShadow: '0 4px 10px rgba(255, 255, 255, 0.1)',
         }}
         onClick={() => onClick(project)}
       />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ContactModal from './ContactModal';
-import styles from './FloatIcons.module.css';
+import styles from './Floaticons.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function FloatIcons({ toggleTheme, theme }) {

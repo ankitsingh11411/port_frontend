@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Form, Input, Button } from 'antd';
+import { Modal, Form, Input, Button, message } from 'antd';
 import styles from './ContactModal.module.css';
 import axios from 'axios';
 

@@ -33,46 +33,16 @@
   font-size: 1.5rem;
 }
 
-.contactIcon i {
-  color: rgb(30, 80, 150);
-}
-
-.linkedinIcon i {
-  color: rgb(0, 119, 181);
-}
-
-.githubIcon i {
-  color: rgb(50, 50, 50);
-}
-
-[data-theme='light'] .themeIcon i {
-  color: rgb(255, 165, 0);
-}
-
-[data-theme='dark'] .themeIcon i {
-  color: rgb(0, 130, 173);
-}
-
-[data-theme='light'] .contactIcon i {
-  color: rgb(16, 91, 197);
-}
-
-[data-theme='dark'] .contactIcon i {
-  color: rgb(3, 0, 153);
-}
-
-[data-theme='light'] .githubIcon i {
-  color: rgb(107, 107, 107);
-}
-
-[data-theme='dark'] .githubIcon i {
-  color: rgb(200, 200, 200);
-}
-
+[data-theme='light'] .themeIcon i,
+[data-theme='light'] .contactIcon i,
+[data-theme='light'] .githubIcon i,
 [data-theme='light'] .linkedinIcon i {
-  color: rgb(0, 119, 181);
+  color: rgb(189, 123, 0);
 }
 
+[data-theme='dark'] .themeIcon i,
+[data-theme='dark'] .contactIcon i,
+[data-theme='dark'] .githubIcon i,
 [data-theme='dark'] .linkedinIcon i {
-  color: rgb(100, 181, 246);
+  color: rgb(0, 130, 173);
 }

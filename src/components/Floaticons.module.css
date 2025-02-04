@@ -34,12 +34,15 @@
 }
 
 .contactIcon i {
-  color: rgb(255, 165, 0);
+  color: rgb(30, 80, 150);
 }
 
-.themeIcon i {
-  font-size: 1.5rem;
-  color: #ffffff;
+.linkedinIcon i {
+  color: rgb(0, 119, 181);
+}
+
+.githubIcon i {
+  color: rgb(50, 50, 50);
 }
 
 [data-theme='light'] .themeIcon i {
@@ -47,5 +50,29 @@
 }
 
 [data-theme='dark'] .themeIcon i {
-  color: rgb(173, 216, 230);
+  color: rgb(0, 130, 173);
+}
+
+[data-theme='light'] .contactIcon i {
+  color: rgb(16, 91, 197);
+}
+
+[data-theme='dark'] .contactIcon i {
+  color: rgb(3, 0, 153);
+}
+
+[data-theme='light'] .githubIcon i {
+  color: rgb(107, 107, 107);
+}
+
+[data-theme='dark'] .githubIcon i {
+  color: rgb(200, 200, 200);
+}
+
+[data-theme='light'] .linkedinIcon i {
+  color: rgb(0, 119, 181);
+}
+
+[data-theme='dark'] .linkedinIcon i {
+  color: rgb(100, 181, 246);
 }

@@ -3,10 +3,18 @@
   overflow: hidden;
   padding: 50px;
   text-align: center;
-  color: white;
+  color: var(--text-color);
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, #003f72, #240046);
+  background: linear-gradient(
+    90deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
   z-index: 1;
+}
+
+.profile_description {
+  color: var(--text-color);
 }
 
 .avatar_wrapper {
@@ -24,8 +32,8 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: rgba(198, 169, 105, 0.2);
-  box-shadow: 0 0 15px rgba(198, 169, 105, 0.5);
+  background: var(--secondary-bg);
+  box-shadow: 0 0 50px var(--secondary-bg2);
   animation: pulseGlow 2s infinite alternate ease-in-out;
 }
 

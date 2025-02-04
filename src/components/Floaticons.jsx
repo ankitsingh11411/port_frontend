@@ -10,9 +10,9 @@ function FloatIcons({ toggleTheme, theme }) {
     <div className={styles.social}>
       <a onClick={toggleTheme} className={styles.themeIcon}>
         {theme === 'dark' ? (
-          <i className="fas fa-sun"></i>
-        ) : (
           <i className="fas fa-moon"></i>
+        ) : (
+          <i className="fas fa-sun"></i>
         )}
       </a>
 
@@ -24,6 +24,7 @@ function FloatIcons({ toggleTheme, theme }) {
         href="https://github.com/ankitsingh11411"
         target="_blank"
         rel="noreferrer"
+        className={styles.githubIcon}
       >
         <i className="fab fa-github"></i>
       </a>
@@ -31,11 +32,9 @@ function FloatIcons({ toggleTheme, theme }) {
         href="https://www.linkedin.com/in/ankit-singh-46492a174/"
         target="_blank"
         rel="noreferrer"
+        className={styles.linkedinIcon}
       >
         <i className="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-        <i className="fab fa-instagram"></i>
       </a>
 
       <ContactModal

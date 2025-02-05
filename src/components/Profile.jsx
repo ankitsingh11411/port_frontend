@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Avatar, Typography, Row, Col, Empty, Card } from 'antd';
 import { motion } from 'framer-motion';
+import { PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import styles from './Profile.module.css';
 import mypic from '/mypic.jpg';
 import projects from '../assets/Project.js';
@@ -21,6 +22,19 @@ function Profile() {
   const handleModalClose = () => {
     setIsModalVisible(false);
     setSelectedProject(null);
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   return (
@@ -51,31 +65,65 @@ function Profile() {
 
         <Col xs={24} sm={24} md={14} lg={12} xl={10}>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
           >
             <Card className={styles.profile_card} bordered={false}>
               <Title level={2} className={styles.title}>
                 Ankit Singh
               </Title>
-              <Paragraph className={styles.profile_description}>
-                I am a full-stack developer with a penchant for engineering
-                elegant and minimalistic frontend designs. My proficiency spans
-                crafting seamless animations, immersive parallax effects, and
-                intuitive user interfaces, paired with expertise in managing
-                APIs and optimizing backend-to-frontend integrations for robust
-                and dynamic web applications.
-                <br />
-                Renowned for my articulate communication skills, I excel in
-                fostering seamless collaboration and delivering excellence
-                across every project phase.
-                <br />
-                Outside the digital sphere, I am an automotive aficionado with
-                deep knowledge of cars, motorcycles, high-performance racing,
-                advanced modifications, and the intricate science of
-                aerodynamics.
-              </Paragraph>
+
+              <motion.div
+                variants={textVariants}
+                className={styles.contact_info}
+              >
+                <Row justify="center" align="middle" gutter={[20, 20]}>
+                  <Col>
+                    <a href="tel:+919876543210" className={styles.contact_link}>
+                      <PhoneOutlined className={styles.icon} /> +91 98765 43210
+                    </a>
+                  </Col>
+                  <Col>
+                    <a
+                      href="mailto:akxxs22@gmail.com"
+                      className={styles.contact_link}
+                    >
+                      <MailOutlined className={styles.icon} /> akxxs22@gmail.com
+                    </a>
+                  </Col>
+                </Row>
+              </motion.div>
+
+              <motion.div variants={textVariants}>
+                <Paragraph className={styles.profile_description}>
+                  I am a full-stack developer with a penchant for engineering
+                  elegant and minimalistic frontend designs.
+                </Paragraph>
+              </motion.div>
+              <motion.div variants={textVariants}>
+                <Paragraph className={styles.profile_description}>
+                  My proficiency spans crafting seamless animations, immersive
+                  parallax effects, and intuitive user interfaces, paired with
+                  expertise in managing APIs and optimizing backend-to-frontend
+                  integrations for robust and dynamic web applications.
+                </Paragraph>
+              </motion.div>
+              <motion.div variants={textVariants}>
+                <Paragraph className={styles.profile_description}>
+                  Renowned for my articulate communication skills, I excel in
+                  fostering seamless collaboration and delivering excellence
+                  across every project phase.
+                </Paragraph>
+              </motion.div>
+              <motion.div variants={textVariants}>
+                <Paragraph className={styles.profile_description}>
+                  Outside the digital sphere, I am an automotive aficionado with
+                  deep knowledge of cars, motorcycles, high-performance racing,
+                  advanced modifications, and the intricate science of
+                  aerodynamics.
+                </Paragraph>
+              </motion.div>
             </Card>
           </motion.div>
         </Col>

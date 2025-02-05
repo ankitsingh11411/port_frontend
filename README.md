@@ -1,22 +1,19 @@
-# React + Vite
+# Profile App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a portfolio application built with React, showcasing personal information, projects, and the ability to switch themes dynamically. The application uses various animations, UI components, and modern frontend practices to provide a sleek user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Profile Section**: Displays personal information with smooth animations and contact details.
+- **Projects Section**: Displays a collection of projects with hover effects, each clickable to reveal more details.
+- **Dynamic Theme Toggle**: Users can switch between light and dark modes. The selected theme is persisted using `localStorage`.
+- **Modal for Projects**: A modal dialog showcases detailed information about selected projects.
+- **Responsive Layout**: The app is fully responsive, ensuring a good experience across various device sizes.
 
-profile desc
+## Technologies Used
 
-    I am a full-stack developer with a penchant for engineering elegant and
-        minimalistic frontend designs. My proficiency spans crafting seamless
-        animations, immersive parallax effects, and intuitive user interfaces,
-        paired with expertise in managing APIs and optimizing
-        backend-to-frontend integrations for robust and dynamic web
-        applications. <br /> Renowned for my articulate communication skills, I
-        excel in fostering seamless collaboration and delivering excellence
-        across every project phase. <br />
-        Outside the digital sphere, I am an automotive aficionado with deep
-        knowledge of cars, motorcycles, high-performance racing, advanced
-        modifications, and the intricate science of aerodynamics.
+- **React**: A JavaScript library for building user interfaces.
+- **Framer Motion**: For smooth animations and transitions.
+- **Ant Design**: A UI component library that provides pre-built components like `Avatar`, `Card`, `Row`, `Col`, etc.
+- **React Router**: For navigation between different sections of the app.
+- **CSS Modules**: For scoped styling with modular CSS.

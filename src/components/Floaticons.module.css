@@ -31,18 +31,5 @@
 
 .social i {
   font-size: 1.5rem;
-}
-
-[data-theme='light'] .themeIcon i,
-[data-theme='light'] .contactIcon i,
-[data-theme='light'] .githubIcon i,
-[data-theme='light'] .linkedinIcon i {
-  color: rgb(189, 123, 0);
-}
-
-[data-theme='dark'] .themeIcon i,
-[data-theme='dark'] .contactIcon i,
-[data-theme='dark'] .githubIcon i,
-[data-theme='dark'] .linkedinIcon i {
-  color: rgb(0, 130, 173);
+  color: var(--icon-col);
 }

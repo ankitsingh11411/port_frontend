@@ -12,7 +12,7 @@
 }
 
 .profile_card {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--desc-back);
   border-radius: 30px;
   padding: 20px;
   backdrop-filter: blur(10px);
@@ -71,10 +71,34 @@
 .profile_description {
   color: var(--desc-text);
   line-height: 1.6;
+  text-align: left;
   font-size: 1.1rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact_info {
+  margin: 20px;
+}
+
+.contact_link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact_link:hover {
+  color: var(--accent-color);
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--icon-col);
 }
 
 .project_cards {

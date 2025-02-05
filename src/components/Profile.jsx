@@ -80,8 +80,8 @@ function Profile() {
               >
                 <Row justify="center" align="middle" gutter={[20, 20]}>
                   <Col>
-                    <a href="tel:+919876543210" className={styles.contact_link}>
-                      <PhoneOutlined className={styles.icon} /> +91 98765 43210
+                    <a href="tel:+918825388719" className={styles.contact_link}>
+                      <PhoneOutlined className={styles.icon} /> +91 8825388719
                     </a>
                   </Col>
                   <Col>

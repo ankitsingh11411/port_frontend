@@ -1,5 +1,26 @@
 const projects = [
   {
+    title: 'My Developer Portfolio',
+    description:
+      'This portfolio website is interactive and minimal built with React Vite, Ant Design, and Framer Motion, offering a sleek, dynamic UI with smooth animations. It features reusable card and modal components for modularity and maintainability, along with floating icons for quick access to key links. The dark mode/light mode toggle ensures a customizable user experience. On the backend, Express.js, MongoDB, and JWT provide secure authentication and efficient data handling, forming a robust MERN stack implementation. Integrated with Nodemailer, the portfolio not only sends me email notifications for messages but also delivers an automated greeting email to users. Deployed on Vercel for speed, reliability, and high performance this project highlights my expertise in full-stack development, UI engineering, and seamless interactivity complying with all the modern market demands.',
+    githubLink: 'https://github.com/ankitsingh11411/port_frontend',
+    deployedLink: 'https://port-frontend-one.vercel.app/',
+    image: '/portfolioimg.png',
+    skills: [
+      'React',
+      'Vite',
+      'Framer Motion',
+      'MongoDB',
+      'Express.js',
+      'Ant Design',
+      'Nodemailer',
+      'github',
+      'vercel',
+      'react router',
+    ],
+  },
+
+  {
     title: 'Autoglimpse Arena (Frontend)',
     description:
       'A high-performance, modular web application crafted with React and Vite, featuring an intuitive UI for exploring car collections and detailed specifications. The project showcases efficient state management, modern JavaScript practices, and seamless user navigation, all while ensuring lightning-fast load times through Vite’s optimized build process.',
@@ -35,15 +56,7 @@ const projects = [
     image: '/agbackend.png',
     skills: ['Node.js', 'Express', 'Authentication'],
   },
-  {
-    title: 'My Developer Portfolio',
-    description:
-      'Built with React Vite, Ant Design, Framer Motion, and Modular CSS, my portfolio showcases a sleek, high-performance UI with smooth animations. On the backend, Express.js, MongoDB, and JWT ensure secure authentication and efficient data management, following the MERN stack approach. Nodemailer handles seamless communication. Explore my work and connect for collaborations! 🚀',
-    githubLink: 'https://github.com/ankitsingh11411/port_frontend',
-    deployedLink: 'https://port-frontend-one.vercel.app/',
-    image: '/portfoliodep.png',
-    skills: ['React', 'Vite', 'Framer Motion', 'MongoDB', 'Express.js'],
-  },
+
   {
     title: "Gamer's music player",
     description:

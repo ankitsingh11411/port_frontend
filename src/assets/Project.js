@@ -38,7 +38,6 @@ const projects = [
       'modular css',
     ],
   },
-
   {
     title: 'Autoglimpse Arena (Frontend)',
     description:

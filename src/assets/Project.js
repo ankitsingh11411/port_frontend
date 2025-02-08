@@ -20,6 +20,27 @@ const projects = [
     ],
   },
   {
+    title: 'Chess by Asr',
+    description:
+      'This interactive Rock Paper Scissors game is built using React Vite, offering a seamless and responsive gaming experience. The UI is minimal yet engaging, featuring smooth animations powered by Framer Motion. The application utilizes Ant Design for modern, reusable components, ensuring a clean and structured design. Game scores are stored persistently using localStorage, allowing users to keep track of their performance across sessions. React Router efficiently manages navigation between the home and game pages. Deployed on Vercel, this project ensures high-speed performance and scalability while highlighting my expertise in front-end development, UI engineering, and interactive design.',
+    githubLink: 'https://github.com/ankitsingh11411/RPS-play',
+    deployedLink: 'https://chess-project-asr.vercel.app/',
+    image: '/chess.png',
+    skills: [
+      'React',
+      'Vite',
+      'Framer Motion',
+      'MongoDB',
+      'Express.js',
+      'Ant Design',
+      'javascript',
+      'vercel',
+      'chess.js',
+      'react chessboard',
+      'modular css',
+    ],
+  },
+  {
     title: 'Rock Paper Scissor!',
     description:
       'This interactive Rock Paper Scissors game is built using React Vite, offering a seamless and responsive gaming experience. The UI is minimal yet engaging, featuring smooth animations powered by Framer Motion. The application utilizes Ant Design for modern, reusable components, ensuring a clean and structured design. Game scores are stored persistently using localStorage, allowing users to keep track of their performance across sessions. React Router efficiently manages navigation between the home and game pages. Deployed on Vercel, this project ensures high-speed performance and scalability while highlighting my expertise in front-end development, UI engineering, and interactive design.',

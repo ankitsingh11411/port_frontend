@@ -4,6 +4,7 @@
   white-space: nowrap;
   position: relative;
   background: var(--desc-back);
+  transition: background 0.3s ease-in-out;
   border-radius: 20px;
   padding: 15px 0;
 }
@@ -26,6 +27,7 @@
   font-weight: 600;
   padding: 10px 20px;
   color: var(--text-color);
+  transition: color 0.3s ease-in-out;
   display: inline-block;
   white-space: nowrap;
 }

@@ -9,6 +9,7 @@
     var(--gradient-start),
     var(--gradient-end)
   );
+  transition: background 0.3s ease-in-out;
 }
 
 .profile_card {
@@ -48,7 +49,8 @@
   border-radius: 50%;
   background: var(--secondary-bg);
   box-shadow: 0 0 50px var(--secondary-bg2);
-  animation: pulseGlow 2s infinite alternate ease-in-out;
+  animation: pulseGlow 1s infinite alternate ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 @keyframes pulseGlow {
@@ -99,6 +101,27 @@
 .icon {
   font-size: 1.2rem;
   color: var(--icon-col);
+}
+.download_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download_resume_button {
+  background: var(--gradient-end);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.download_resume_button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .project_cards {

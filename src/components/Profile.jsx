@@ -114,6 +114,20 @@ function Profile() {
                   advanced modifications, and the intricate science of
                   aerodynamics.
                 </Paragraph>
+                {/* Download Resume Button */}
+                <motion.div
+                  variants={textVariants}
+                  className={styles.download_container}
+                >
+                  <motion.button
+                    className={styles.download_resume_button}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => window.open('/resume.pdf', '_blank')}
+                  >
+                    Download Resume
+                  </motion.button>
+                </motion.div>
               </motion.div>
             </Card>
           </motion.div>

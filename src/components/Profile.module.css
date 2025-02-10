@@ -163,6 +163,9 @@
     height: 90px !important;
   }
 
+.icon {
+  font-size: 0.7rem;
+}
   .profile_card {
     max-width: 90%;
     padding: 15px;
@@ -202,6 +205,9 @@
     height: 75px !important;
   }
 
+.icon {
+  font-size: 0.7rem;
+}
   .profile_card {
     max-width: 95%;
     padding: 10px;

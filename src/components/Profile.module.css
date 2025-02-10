@@ -163,9 +163,10 @@
     height: 90px !important;
   }
 
-.icon {
-  font-size: 0.7rem;
+.contact_link {
+  font-size: 0.8rem;
 }
+
   .profile_card {
     max-width: 90%;
     padding: 15px;
@@ -205,9 +206,10 @@
     height: 75px !important;
   }
 
-.icon {
-  font-size: 0.7rem;
+.contact_link {
+  font-size: 0.8rem;
 }
+
   .profile_card {
     max-width: 95%;
     padding: 10px;

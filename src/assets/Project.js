@@ -5,7 +5,7 @@ const projects = [
       'This portfolio website is interactive and minimal built with React Vite, Ant Design, and Framer Motion, offering a sleek, dynamic UI with smooth animations. It features reusable card and modal components for modularity and maintainability, along with floating icons for quick access to key links. The dark mode/light mode toggle ensures a customizable user experience. On the backend, Express.js, MongoDB, and JWT provide secure authentication and efficient data handling, forming a robust MERN stack implementation. Integrated with Nodemailer, the portfolio not only sends me email notifications for messages but also delivers an automated greeting email to users. Deployed on Vercel for speed, reliability, and high performance this project highlights my expertise in full-stack development, UI engineering, and seamless interactivity complying with all the modern market demands.',
     githubLink: 'https://github.com/ankitsingh11411/port_frontend',
     deployedLink: 'https://port-frontend-one.vercel.app/',
-    image: '/portimg.png',
+    image: '/portimage.png',
     skills: [
       'React',
       'Vite',

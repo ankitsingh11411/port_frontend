@@ -174,7 +174,7 @@
   }
 
   .profile_description {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .project_cards {
@@ -184,7 +184,7 @@
 
 @media (max-width: 480px) {
   .profile {
-    padding: 20px;
+    padding: 10px;
   }
 
   .avatar_wrapper {
@@ -205,7 +205,7 @@
   .profile_card {
     max-width: 95%;
     padding: 10px;
-    margin: 30px auto;
+    margin: 20px auto;
     border-radius: 15px;
   }
 
@@ -214,6 +214,10 @@
   }
 
   .profile_description {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .download_resume_button {
+    font-size: 0.8rem;
   }
 }

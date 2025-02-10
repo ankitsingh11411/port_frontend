@@ -123,7 +123,7 @@ function Profile() {
                     className={styles.download_resume_button}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('/resume.pdf', '_blank')}
+                    onClick={() => window.open('/ASR mern.pdf', '_blank')}
                   >
                     Download Resume
                   </motion.button>

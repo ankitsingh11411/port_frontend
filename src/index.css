@@ -17,13 +17,13 @@ html[data-theme='light'] {
   --accent-color: rgb(0, 255, 234);
   --primary-bg: #888888;
   --desc-text: rgb(0, 0, 0);
-  --secondary-bg: #14005a;
-  --secondary-bg2: #2d0080;
+  --secondary-bg: #7e5bff;
+  --secondary-bg2: #5e31ff;
   --icon-col: rgb(255, 255, 255);
   --text-color: #000000;
   --card-bg: #000000;
   --gradient-start: #cccccc;
-  --gradient-end: #2e006b;
+  --gradient-end: #7e5bff;
 }
 
 html,

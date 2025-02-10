@@ -1,0 +1,38 @@
+.skills_container {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: var(--desc-back);
+  border-radius: 20px;
+  padding: 15px 0;
+}
+
+.skillhead {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills_wrapper {
+  display: flex;
+  gap: 0px;
+}
+
+.skill_item {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: var(--text-color);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .skills_container {
+    width: 90%;
+    padding: 10px 0;
+  }
+}

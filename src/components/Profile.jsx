@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Avatar, Typography, Row, Col, Empty, Card } from 'antd';
+import { Avatar, Typography, Row, Col, Card, Empty } from 'antd';
 import { motion } from 'framer-motion';
 import { PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import styles from './Profile.module.css';
@@ -7,6 +7,7 @@ import mypic from '/mypic.jpg';
 import projects from '../assets/Project.js';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
+import SkillsCarousel from './SkillsCarousel';
 
 const { Title, Paragraph } = Typography;
 
@@ -26,10 +27,7 @@ function Profile() {
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.3 },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
   };
 
   const textVariants = {
@@ -39,12 +37,8 @@ function Profile() {
 
   return (
     <section className={styles.profile}>
-      <Row
-        gutter={[30, 30]}
-        align="middle"
-        justify="center"
-        className={styles.profile_row}
-      >
+      <Row gutter={[30, 30]} align="middle" justify="center">
+        {/* Profile Avatar Section */}
         <Col
           xs={24}
           sm={24}
@@ -63,6 +57,7 @@ function Profile() {
           </motion.div>
         </Col>
 
+        {/* Profile Details Section */}
         <Col xs={24} sm={24} md={14} lg={12} xl={10}>
           <motion.div
             initial="hidden"
@@ -74,6 +69,7 @@ function Profile() {
                 Ankit Singh
               </Title>
 
+              {/* Contact Info */}
               <motion.div
                 variants={textVariants}
                 className={styles.contact_info}
@@ -95,28 +91,23 @@ function Profile() {
                 </Row>
               </motion.div>
 
+              {/* About & Skills Description */}
               <motion.div variants={textVariants}>
                 <Paragraph className={styles.profile_description}>
                   I am a full-stack developer with a penchant for engineering
                   elegant and minimalistic frontend designs.
                 </Paragraph>
-              </motion.div>
-              <motion.div variants={textVariants}>
                 <Paragraph className={styles.profile_description}>
                   My proficiency spans crafting seamless animations, immersive
                   parallax effects, and intuitive user interfaces, paired with
                   expertise in managing APIs and optimizing backend-to-frontend
                   integrations for robust and dynamic web applications.
                 </Paragraph>
-              </motion.div>
-              <motion.div variants={textVariants}>
                 <Paragraph className={styles.profile_description}>
                   Renowned for my articulate communication skills, I excel in
                   fostering seamless collaboration and delivering excellence
                   across every project phase.
                 </Paragraph>
-              </motion.div>
-              <motion.div variants={textVariants}>
                 <Paragraph className={styles.profile_description}>
                   Outside the digital sphere, I am an automotive aficionado with
                   deep knowledge of cars, motorcycles, high-performance racing,
@@ -127,8 +118,11 @@ function Profile() {
             </Card>
           </motion.div>
         </Col>
+        <SkillsCarousel />
+        <h1>Here, have a look at my works !</h1>
       </Row>
 
+      {/* Project Section */}
       <div className={styles.project_cards}>
         {projects.length > 0 ? (
           <Row gutter={[45, 45]} justify="center">
